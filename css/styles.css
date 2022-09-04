@@ -94,10 +94,12 @@ justify-content: flex-end;
 
 .contacts .item-contact:not(:last-child) {
 margin-right: 30px;
+
 }
 
 .item-contact {
     align-items: center;}
+    
 
 .icon-contact {
       margin-right: 10px;
@@ -116,7 +118,20 @@ color: #757575 ;
     fill: var(--accent-color); 
     color: var(--accent-color);  
 }
- 
+.link-chapter {
+   
+    position: relative;
+    
+}
+
+.item-chapter .current::after {
+    display: block;
+    position: absolute;
+    content: "";
+    width: 100%;
+    border: 1px solid var(--accent-color) ;
+    border-radius: 2px;
+}
 
 .hero {
 background-image: 
@@ -266,9 +281,34 @@ letter-spacing: 0.03em;
 margin-top: 50px;
 display: flex;
 }
-
+.image-item {
+    position: relative;
+}
 .image-item:not(:last-child) {
 margin-right: 30px;
+}
+.description {
+    display: flex;
+position: absolute;
+width: 370px;
+height: 70px;
+background: rgba(47, 48, 58, 0.8);
+bottom: 0;
+}
+.text-description {
+    
+
+padding:auto;
+margin: auto;
+font-weight: 700;
+font-size: 14px;
+line-height: 1.14;
+text-align: center;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color:var(--primaty-white-color);
+
+
 }
 
 .shadow {
